@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Curricular Interactiva - Administración de Empresas</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+      padding: 40px;
+    }
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 36px;
+      text-align: center;
+      color: #004080;
+      margin-bottom: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 14px;
+      text-align: center;
+    }
+    th {
+      background-color: #004080;
+      color: white;
+    }
+    .semestre {
+      background-color: #cce5ff;
+      font-weight: bold;
+    }
+    td.ramo {
+      background-color: #e6f2ff;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+    td.ramo:hover {
+      background-color: #d0ebff;
+    }
+    .completed {
+      text-decoration: line-through;
+      background-color: #d4edda !important;
+      color: #555;
+    }
+    .color-1 { background-color: #e0f7fa; }
+    .color-2 { background-color: #fff3cd; }
+    .color-3 { background-color: #f8d7da; }
+    .color-4 { background-color: #d1ecf1; }
+    .color-5 { background-color: #f0e5ff; }
+  </style>
+  <script>
+    function toggleCompleted(cell) {
+      cell.classList.toggle('completed');
+    }
+  </script>
+</head>
+<body>
+  <h1>Malla Curricular - Ingeniería en Administración de Empresas</h1>
+  <table>
+    <tr>
+      <th>Asignatura</th>
+      <th>1°</th>
+      <th>2°</th>
+      <th>3°</th>
+      <th>4°</th>
+      <th>5°</th>
+      <th>6°</th>
+      <th>7°</th>
+      <th>8°</th>
+    </tr>
+    <tr>
+      <td class="semestre">Ofimática Aplicada</td>
+      <td class="ramo color-1" onclick="toggleCompleted(this)"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="semestre">Administración de Empresas</td>
+      <td class="ramo color-1" onclick="toggleCompleted(this)"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="semestre">Contabilidad</td>
+      <td class="ramo color-1" onclick="toggleCompleted(this)"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="semestre">Matemática</td>
+      <td class="ramo color-1" onclick="toggleCompleted(this)"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="semestre">Fundamentos Teológicos</td>
+      <td class="ramo color-2" onclick="toggleCompleted(this)"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="semestre">Comunicación en Español</td>
+      <td class="ramo color-3" onclick="toggleCompleted(this)"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="semestre">Análisis Financiero</td>
+      <td></td><td class="ramo color-1" onclick="toggleCompleted(this)"></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="semestre">Estadística Aplicada</td>
+      <td></td><td class="ramo color-1" onclick="toggleCompleted(this)"></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="semestre">Taller de Gestión</td>
+      <td></td><td class="ramo color-4" onclick="toggleCompleted(this)"></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="semestre">Cálculo</td>
+      <td></td><td class="ramo color-1" onclick="toggleCompleted(this)"></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="semestre">Legislación Comercial Tributaria</td>
+      <td></td><td class="ramo color-2" onclick="toggleCompleted(this)"></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td class="semestre">Fundamentos Filosóficos</td>
+      <td></td><td class="ramo color-2" onclick="toggleCompleted(this)"></td><td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+  </table>
+</body>
+</html>
